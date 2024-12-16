@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "bucket-para-salvar-o-estado"
+  bucket = "bucket-para-salvar-o-estado-223344"
 
   tags = {
     Name        = "My bucket"

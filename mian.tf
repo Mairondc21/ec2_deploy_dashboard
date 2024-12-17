@@ -5,6 +5,14 @@ terraform {
             version = ">= 2.7.0"
         }
     }
+    backend "s3" {
+    # Lembre de trocar o bucket para o seu, não pode ser o mesmo nome
+    bucket         = "bucket-para-salvar-o-estado-223344"
+    key            = "terraform-test.tfstate"
+    region         = "us-east-1"
+    encrypt        = true  # Ativa a criptografia
+  }
+
 }
 
 provider "aws" {
@@ -18,4 +26,4 @@ resource "aws_s3_bucket" "example" {
     Name        = "My bucket"
     Environment = "Dev"
   }
-} 
+}

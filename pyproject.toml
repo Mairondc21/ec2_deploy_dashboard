@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ec2-deploy-dashboard"
+version = "0.1.0"
+description = ""
+authors = ["Mairondc21 <duartemairon@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.41.1"
+pandas = "^2.2.3"
+pydeck = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
